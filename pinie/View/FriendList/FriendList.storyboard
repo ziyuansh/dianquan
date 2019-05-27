@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="pudding.ttf">
+            <string>zihun27hao-budingti-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Friend List View Controller-->
+        <scene sceneID="JRt-Hu-ry2">
+            <objects>
+                <viewController storyboardIdentifier="friendsListView" id="hAs-dJ-Bj6" customClass="FriendListViewController" customModule="pinie" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BP7-LX-AYs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8QH-3S-UU3">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Wm9-yn-8UQ">
+                                        <rect key="frame" x="0.0" y="154" width="414" height="742"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <view key="tableFooterView" contentMode="scaleToFill" id="YLL-fF-foS">
+                                            <rect key="frame" x="0.0" y="175" width="414" height="137"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </view>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="friendCell" rowHeight="147" id="OTL-v6-8Gz" customClass="FriendViewCell" customModule="pinie" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="28" width="414" height="147"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OTL-v6-8Gz" id="K6h-tT-Bft">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="147"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="93E-cW-Ooy">
+                                                            <rect key="frame" x="20" y="10" width="374" height="127"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JWJ-0M-5Gq">
+                                                                    <rect key="frame" x="128" y="15" width="223" height="24"/>
+                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                    <fontDescription key="fontDescription" name="zihun27hao-budingti-Regular" family="字魂27号-布丁体" pointSize="20"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iFT-pL-4Kh">
+                                                                    <rect key="frame" x="130" y="43" width="223" height="18"/>
+                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                    <fontDescription key="fontDescription" name="zihun27hao-budingti-Regular" family="字魂27号-布丁体" pointSize="14"/>
+                                                                    <color key="textColor" red="0.43120664359999999" green="0.19079378250000001" blue="0.25490066410000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HlN-vj-hid">
+                                                                    <rect key="frame" x="269" y="65" width="84" height="18"/>
+                                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                                                    <fontDescription key="fontDescription" name="zihun27hao-budingti-Regular" family="字魂27号-布丁体" pointSize="14"/>
+                                                                    <color key="textColor" red="0.43120664359999999" green="0.19079378250000001" blue="0.25490066410000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FZf-3a-jHE">
+                                                                    <rect key="frame" x="130" y="90" width="109" height="29"/>
+                                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                                    <color key="backgroundColor" name="Background"/>
+                                                                    <fontDescription key="fontDescription" name="zihun27hao-budingti-Regular" family="字魂27号-布丁体" pointSize="16"/>
+                                                                    <color key="tintColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                    <inset key="titleEdgeInsets" minX="-53" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="69" maxY="0.0"/>
+                                                                    <state key="normal" title="发送消息" image="Message">
+                                                                        <color key="titleColor" name="FontColorBlack"/>
+                                                                    </state>
+                                                                    <connections>
+                                                                        <action selector="messageButtonTapped:" destination="OTL-v6-8Gz" eventType="touchUpInside" id="8vc-zG-fqV"/>
+                                                                    </connections>
+                                                                </button>
+                                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aQt-FX-xbD">
+                                                                    <rect key="frame" x="257" y="91" width="102" height="28"/>
+                                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                                    <color key="backgroundColor" name="Background"/>
+                                                                    <fontDescription key="fontDescription" name="zihun27hao-budingti-Regular" family="字魂27号-布丁体" pointSize="17"/>
+                                                                    <color key="tintColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <inset key="contentEdgeInsets" minX="6" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                    <inset key="titleEdgeInsets" minX="-53" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="70" maxY="0.0"/>
+                                                                    <state key="normal" title="查看地图" image="IceStick">
+                                                                        <color key="titleColor" name="FontColorBlack"/>
+                                                                    </state>
+                                                                    <connections>
+                                                                        <action selector="mapButtonTapped:" destination="OTL-v6-8Gz" eventType="touchUpInside" id="mkK-uU-LWD"/>
+                                                                    </connections>
+                                                                </button>
+                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SqP-ik-fsO">
+                                                                    <rect key="frame" x="8" y="13" width="100" height="100"/>
+                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
+                                                                </imageView>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="成都" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hxo-aE-OUf">
+                                                                    <rect key="frame" x="269" y="41" width="84" height="17"/>
+                                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                                                    <fontDescription key="fontDescription" name="zihun27hao-budingti-Regular" family="字魂27号-布丁体" pointSize="14"/>
+                                                                    <color key="textColor" red="0.43120664359999999" green="0.19079378250000001" blue="0.25490066410000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="127" id="ynP-D3-yB2"/>
+                                                            </constraints>
+                                                        </view>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="93E-cW-Ooy" firstAttribute="top" secondItem="K6h-tT-Bft" secondAttribute="top" constant="10" id="6n9-Pd-d1F"/>
+                                                        <constraint firstItem="93E-cW-Ooy" firstAttribute="leading" secondItem="K6h-tT-Bft" secondAttribute="leading" constant="20" id="coJ-v9-Tvb"/>
+                                                        <constraint firstAttribute="bottom" secondItem="93E-cW-Ooy" secondAttribute="bottom" constant="10" id="fNZ-Or-wes"/>
+                                                        <constraint firstAttribute="trailing" secondItem="93E-cW-Ooy" secondAttribute="trailing" constant="20" id="sYN-Az-cUg"/>
+                                                    </constraints>
+                                                </tableViewCellContentView>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <connections>
+                                                    <outlet property="avatar" destination="SqP-ik-fsO" id="aeJ-WM-0HL"/>
+                                                    <outlet property="cardView" destination="93E-cW-Ooy" id="nNQ-vO-DHN"/>
+                                                    <outlet property="mapButton" destination="aQt-FX-xbD" id="IyA-nb-9px"/>
+                                                    <outlet property="messageButton" destination="FZf-3a-jHE" id="4h0-wR-s1F"/>
+                                                    <outlet property="name" destination="JWJ-0M-5Gq" id="9b6-7B-pMc"/>
+                                                    <outlet property="newPin" destination="iFT-pL-4Kh" id="KL9-Kr-FFp"/>
+                                                    <outlet property="timeAgo" destination="HlN-vj-hid" id="LXr-F4-Als"/>
+                                                </connections>
+                                            </tableViewCell>
+                                        </prototypes>
+                                        <sections/>
+                                    </tableView>
+                                    <searchBar contentMode="redraw" text="" placeholder="搜索" translatesAutoresizingMaskIntoConstraints="NO" id="4Ya-Ry-O9o">
+                                        <rect key="frame" x="8" y="86" width="398" height="56"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" red="0.99215686270000003" green="0.82745098039999998" blue="0.16078431369999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="barTintColor" red="0.99215686270000003" green="0.82745098039999998" blue="0.16078431369999999" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </searchBar>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="好友" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z81-Dy-Idt">
+                                        <rect key="frame" x="190" y="50" width="34" height="20"/>
+                                        <fontDescription key="fontDescription" name="zihun27hao-budingti-Regular" family="字魂27号-布丁体" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Wm9-yn-8UQ" secondAttribute="bottom" id="2m9-WU-bjg"/>
+                                    <constraint firstItem="4Ya-Ry-O9o" firstAttribute="top" secondItem="Z81-Dy-Idt" secondAttribute="bottom" constant="16" id="3w6-Vj-sE0"/>
+                                    <constraint firstItem="Z81-Dy-Idt" firstAttribute="top" secondItem="vVH-dK-ZXc" secondAttribute="top" constant="6" id="AsC-y6-AaE"/>
+                                    <constraint firstItem="Wm9-yn-8UQ" firstAttribute="leading" secondItem="vVH-dK-ZXc" secondAttribute="leading" id="Gqu-TM-Auh"/>
+                                    <constraint firstItem="vVH-dK-ZXc" firstAttribute="trailing" secondItem="4Ya-Ry-O9o" secondAttribute="trailing" constant="8" id="NRs-iu-EFH"/>
+                                    <constraint firstItem="Wm9-yn-8UQ" firstAttribute="trailing" secondItem="vVH-dK-ZXc" secondAttribute="trailing" id="bJ9-rJ-6cm"/>
+                                    <constraint firstItem="4Ya-Ry-O9o" firstAttribute="leading" secondItem="vVH-dK-ZXc" secondAttribute="leading" constant="8" id="fFq-uE-15t"/>
+                                    <constraint firstItem="Z81-Dy-Idt" firstAttribute="centerX" secondItem="vVH-dK-ZXc" secondAttribute="centerX" id="qGC-O1-pEp"/>
+                                    <constraint firstItem="Wm9-yn-8UQ" firstAttribute="top" secondItem="vVH-dK-ZXc" secondAttribute="top" constant="110" id="xwg-7Y-sir"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="vVH-dK-ZXc"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="8QH-3S-UU3" firstAttribute="leading" secondItem="DM1-fT-LAk" secondAttribute="leading" id="0le-qi-wgy"/>
+                            <constraint firstAttribute="bottom" secondItem="8QH-3S-UU3" secondAttribute="bottom" id="LoH-wF-yPc"/>
+                            <constraint firstAttribute="trailing" secondItem="8QH-3S-UU3" secondAttribute="trailing" id="Vwn-Ad-zC8"/>
+                            <constraint firstItem="8QH-3S-UU3" firstAttribute="top" secondItem="BP7-LX-AYs" secondAttribute="top" id="qQQ-Dx-Oiy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="DM1-fT-LAk"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="8PK-Pd-Z6l" appends="YES" id="gOV-Xl-rSU"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="friendListTable" destination="Wm9-yn-8UQ" id="SUP-vs-BR6"/>
+                        <outlet property="searchBar" destination="4Ya-Ry-O9o" id="kz3-iY-i0W"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ly1-Bh-vTG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="8PK-Pd-Z6l">
+                    <connections>
+                        <action selector="handlePan:" destination="hAs-dJ-Bj6" id="ZoA-mp-PlM"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="659.4202898550725" y="-130.58035714285714"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="IceStick" width="66.5" height="66.5"/>
+        <image name="Message" width="66.5" height="66.5"/>
+        <namedColor name="Background">
+            <color red="0.99215686274509807" green="0.82745098039215681" blue="0.16078431372549021" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="FontColorBlack">
+            <color red="0.25882352941176473" green="0.25882352941176473" blue="0.25882352941176473" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

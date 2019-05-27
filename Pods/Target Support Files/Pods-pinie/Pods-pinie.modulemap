@@ -1,0 +1,6 @@
+framework module Pods_pinie {
+  umbrella header "Pods-pinie-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,38 @@
+PODS:
+  - Alamofire (4.8.2)
+  - BaiduMapKit (4.3.0)
+  - Realm (3.15.0):
+    - Realm/Headers (= 3.15.0)
+  - Realm/Headers (3.15.0)
+  - RealmSwift (3.15.0):
+    - Realm (= 3.15.0)
+  - SwiftyJSON (5.0.0)
+  - TZImagePickerController (3.2.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - BaiduMapKit
+  - RealmSwift (= 3.15.0)
+  - SwiftyJSON
+  - TZImagePickerController
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - BaiduMapKit
+    - Realm
+    - RealmSwift
+    - SwiftyJSON
+    - TZImagePickerController
+
+SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  BaiduMapKit: 63575d9236b4112c4ff76391df637f2a6dc1ada8
+  Realm: 9b834e1be6062f544805252c812348872dc5d4ed
+  RealmSwift: 8a41886f8ab6efef9eb8df97de2f2bb911561a79
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+  TZImagePickerController: 7850b158d025065b162a1a963d445040b828abc9
+
+PODFILE CHECKSUM: b58460f20b203f0122da34a0b6458ea07290ae05
+
+COCOAPODS: 1.6.1

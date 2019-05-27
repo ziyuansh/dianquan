@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="W3h-3s-iVX">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Pin Detail Gallery View View Controller-->
+        <scene sceneID="Wb8-5P-9n6">
+            <objects>
+                <viewController modalPresentationStyle="overCurrentContext" id="W3h-3s-iVX" customClass="PinDetailGalleryViewViewController" customModule="pinie" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="39M-zV-VW0">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wpS-rA-22e">
+                                <rect key="frame" x="0.0" y="20" width="414" height="552"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </scrollView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="vSV-yg-Zi4">
+                                <rect key="frame" x="121" y="650" width="172" height="37"/>
+                                <color key="pageIndicatorTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="currentPageIndicatorTintColor" name="Button"/>
+                            </pageControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Crd-Fb-MNR">
+                                <rect key="frame" x="167" y="760" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="7Id-5j-nDe"/>
+                                    <constraint firstAttribute="width" constant="80" id="XLM-Iw-Gae"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="close-circle"/>
+                                <connections>
+                                    <segue destination="WBF-7N-GRQ" kind="unwind" unwindAction="unwind:" id="Oqv-rn-PME"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.71058968321917804" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="k5Y-Z7-0Hi" firstAttribute="bottom" secondItem="Crd-Fb-MNR" secondAttribute="bottom" constant="22" id="Qmu-Vj-DVN"/>
+                            <constraint firstItem="vSV-yg-Zi4" firstAttribute="centerX" secondItem="k5Y-Z7-0Hi" secondAttribute="centerX" id="Zyr-XP-D7W"/>
+                            <constraint firstItem="k5Y-Z7-0Hi" firstAttribute="bottom" secondItem="vSV-yg-Zi4" secondAttribute="bottom" constant="175" id="mJp-kK-fDZ"/>
+                            <constraint firstItem="Crd-Fb-MNR" firstAttribute="centerX" secondItem="k5Y-Z7-0Hi" secondAttribute="centerX" id="tPw-hJ-rfh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="k5Y-Z7-0Hi"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageScrollView" destination="wpS-rA-22e" id="0vd-Yk-aDN"/>
+                        <outlet property="pageControl" destination="vSV-yg-Zi4" id="AKB-q0-DEg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="imx-on-d0Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="WBF-7N-GRQ" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="3566.666666666667" y="85.714285714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="close-circle" width="200" height="200"/>
+        <namedColor name="Button">
+            <color red="0.99607843137254903" green="0.69019607843137254" blue="0.15294117647058825" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

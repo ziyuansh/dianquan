@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2Qz-1y-Vx7">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="pudding.ttf">
+            <string>zihun27hao-budingti-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--SearchPOI View Controller-->
+        <scene sceneID="Bme-4Z-XpN">
+            <objects>
+                <viewController storyboardIdentifier="SearchPOI" modalPresentationStyle="overCurrentContext" useStoryboardIdentifierAsRestorationIdentifier="YES" id="2Qz-1y-Vx7" customClass="SearchPOIViewController" customModule="pinie" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="esU-yg-faH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="QMP-Jz-VcL">
+                                <rect key="frame" x="197" y="443" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8AH-nq-KOC">
+                                <rect key="frame" x="28" y="206" width="358" height="356"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="搜索地点" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Par-Of-cCE">
+                                        <rect key="frame" x="0.0" y="0.0" width="358" height="70"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" name="Background"/>
+                                        <fontDescription key="fontDescription" name="zihun27hao-budingti-Regular" family="字魂27号-布丁体" pointSize="24"/>
+                                        <color key="textColor" name="FontColorBrown"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RhK-DU-B3O">
+                                        <rect key="frame" x="85" y="99" width="265" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="名称" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NKy-iw-BZe">
+                                        <rect key="frame" x="8" y="104" width="69" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="地区" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="932-ce-j7y">
+                                        <rect key="frame" x="8" y="190" width="69" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zKz-tH-ikw">
+                                        <rect key="frame" x="85" y="185" width="265" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xUH-EY-d8L">
+                                        <rect key="frame" x="242" y="308" width="108" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" name="Background"/>
+                                        <fontDescription key="fontDescription" name="zihun27hao-budingti-Regular" family="字魂27号-布丁体" pointSize="17"/>
+                                        <inset key="titleEdgeInsets" minX="-40" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <inset key="imageEdgeInsets" minX="5" minY="10" maxX="70" maxY="10"/>
+                                        <state key="normal" title="搜索" image="Search">
+                                            <color key="titleColor" name="FontColorBrown"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="pressSearchButton:" destination="2Qz-1y-Vx7" eventType="touchUpInside" id="Vba-be-Rhz"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vxn-on-8Rt">
+                                        <rect key="frame" x="294" y="8" width="56" height="55"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" name="Background"/>
+                                        <color key="tintColor" red="0.43120664359999999" green="0.19079378250000001" blue="0.25490066410000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" image="close-circle">
+                                            <color key="titleColor" name="FontColorBrown"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="a2V-Gx-GTH" kind="unwind" unwindAction="unwind:" id="es6-8o-T09"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.43295162671232879" alpha="0.66045055650684936" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="QMP-Jz-VcL" firstAttribute="centerY" secondItem="BE5-Oc-csU" secondAttribute="centerY" id="6yU-B4-3Sg"/>
+                            <constraint firstItem="QMP-Jz-VcL" firstAttribute="centerX" secondItem="BE5-Oc-csU" secondAttribute="centerX" id="NyW-tU-i1F"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="BE5-Oc-csU"/>
+                    </view>
+                    <connections>
+                        <outlet property="cancelButton" destination="vxn-on-8Rt" id="oFt-Ya-I7G"/>
+                        <outlet property="cityName" destination="zKz-tH-ikw" id="IwM-f1-TPa"/>
+                        <outlet property="keywords" destination="RhK-DU-B3O" id="rbB-8p-Phj"/>
+                        <outlet property="popView" destination="8AH-nq-KOC" id="KbU-GH-OZq"/>
+                        <outlet property="searchButton" destination="xUH-EY-d8L" id="T9P-Ni-XRJ"/>
+                        <outlet property="titleLabel" destination="Par-Of-cCE" id="FmU-we-VQ8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wkG-sB-TXd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="a2V-Gx-GTH" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2926.0869565217395" y="85.714285714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Search" width="66.5" height="66.5"/>
+        <image name="close-circle" width="200" height="200"/>
+        <namedColor name="Background">
+            <color red="0.99215686274509807" green="0.82745098039215681" blue="0.16078431372549021" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="FontColorBrown">
+            <color red="0.37254901960784315" green="0.2627450980392157" blue="0.2627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
